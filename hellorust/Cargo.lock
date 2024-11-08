@@ -687,6 +687,41 @@ dependencies = [
 ]
 
 [[package]]
+name = "darling"
+version = "0.20.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6f63b86c8a8826a49b8c21f08a2d07338eec8d900540f8630dc76284be802989"
+dependencies = [
+ "darling_core",
+ "darling_macro",
+]
+
+[[package]]
+name = "darling_core"
+version = "0.20.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "95133861a8032aaea082871032f5815eb9e98cef03fa916ab4500513994df9e5"
+dependencies = [
+ "fnv",
+ "ident_case",
+ "proc-macro2",
+ "quote",
+ "strsim",
+ "syn 2.0.87",
+]
+
+[[package]]
+name = "darling_macro"
+version = "0.20.10"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d336a2a514f6ccccaa3e09b02d41d35330c07ddf03a62165fcec10bb561c7806"
+dependencies = [
+ "darling_core",
+ "quote",
+ "syn 2.0.87",
+]
+
+[[package]]
 name = "der"
 version = "0.7.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -705,6 +740,28 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "derive-core"
+version = "0.0.0"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+dependencies = [
+ "convert_case 0.6.0",
+ "crypto-hashes",
+ "darling",
+ "fluentbase-codec",
+ "hex",
+ "paste",
+ "proc-macro-error",
+ "proc-macro2",
+ "quote",
+ "regex",
+ "serde",
+ "syn 2.0.87",
+ "syn-solidity",
+ "thiserror",
+ "tracing",
 ]
 
 [[package]]
@@ -854,7 +911,7 @@ checksum = "ec3aeb0284b473041df2419a28e3cdf0c64a78d2b9511af4b6e40bad3964b172"
 dependencies = [
  "ethereum-types",
  "hashbrown 0.14.5",
- "keccak-hash",
+ "keccak-hash 0.10.0",
  "log",
  "parking_lot",
  "rlp",
@@ -883,8 +940,8 @@ dependencies = [
  "fixed-hash",
  "impl-rlp",
  "impl-serde",
- "primitive-types",
- "uint",
+ "primitive-types 0.12.2",
+ "uint 0.9.5",
 ]
 
 [[package]]
@@ -930,10 +987,11 @@ dependencies = [
 [[package]]
 name = "fluentbase-codec"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "alloy-primitives 0.8.11",
  "byteorder",
+ "bytes",
  "casey",
  "fluentbase-codec-derive",
  "hashbrown 0.15.1",
@@ -944,10 +1002,11 @@ dependencies = [
 [[package]]
 name = "fluentbase-codec-derive"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
+ "proc-macro2",
  "quote",
  "serde",
  "syn 2.0.87",
@@ -956,7 +1015,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-genesis"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "alloy-genesis",
  "alloy-primitives 0.8.11",
@@ -976,7 +1035,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-poseidon"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "bitvec",
  "halo2curves 0.6.1 (git+https://github.com/privacy-scaling-explorations/halo2curves?tag=v0.6.1)",
@@ -988,22 +1047,23 @@ dependencies = [
 [[package]]
 name = "fluentbase-runtime"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "eth_trie",
+ "fluentbase-codec",
  "fluentbase-poseidon",
  "fluentbase-types",
  "halo2curves 0.6.1 (git+https://github.com/privacy-scaling-explorations/halo2curves?tag=v0.6.1)",
  "hashbrown 0.15.1",
  "k256",
- "keccak-hash",
+ "keccak-hash 0.11.0",
  "rwasm",
 ]
 
 [[package]]
 name = "fluentbase-sdk"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-genesis",
@@ -1016,11 +1076,14 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk-derive"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
+ "darling",
+ "derive-core",
  "hex",
+ "paste",
  "proc-macro-error",
  "proc-macro2",
  "quote",
@@ -1033,10 +1096,11 @@ dependencies = [
 [[package]]
 name = "fluentbase-types"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "alloy-primitives 0.8.11",
  "alloy-rlp",
+ "auto_impl",
  "byteorder",
  "fluentbase-codec",
  "hashbrown 0.15.1",
@@ -1218,6 +1282,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "ident_case"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b9e0384b61958566e926dc50660321d12159025e767c18e043daf26b70104c39"
+
+[[package]]
 name = "impl-codec"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1331,7 +1401,17 @@ version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4b286e6b663fb926e1eeb68528e69cb70ed46c6d65871a21b2215ae8154c6d3c"
 dependencies = [
- "primitive-types",
+ "primitive-types 0.12.2",
+ "tiny-keccak",
+]
+
+[[package]]
+name = "keccak-hash"
+version = "0.11.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3e1b8590eb6148af2ea2d75f38e7d29f5ca970d5a4df456b3ef19b8b415d0264"
+dependencies = [
+ "primitive-types 0.13.1",
  "tiny-keccak",
 ]
 
@@ -1538,6 +1618,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "pin-project-lite"
+version = "0.2.15"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "915a1e146535de9163f3987b8944ed8cf49a18bb0056bcebcdcece385cece4ff"
+
+[[package]]
 name = "pkcs8"
 version = "0.10.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1575,7 +1661,17 @@ dependencies = [
  "impl-codec",
  "impl-rlp",
  "impl-serde",
- "uint",
+ "uint 0.9.5",
+]
+
+[[package]]
+name = "primitive-types"
+version = "0.13.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d15600a7d856470b7d278b3fe0e311fe28c2526348549f8ef2ff7db3299c87f5"
+dependencies = [
+ "fixed-hash",
+ "uint 0.10.0",
 ]
 
 [[package]]
@@ -1762,7 +1858,7 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 [[package]]
 name = "revm-primitives"
 version = "10.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#7e7d11d4cc674373832c9145d330a55fad8720bf"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
 dependencies = [
  "alloy-eip2930",
  "alloy-eip7702",
@@ -1819,7 +1915,7 @@ dependencies = [
  "num-bigint",
  "num-traits",
  "parity-scale-codec",
- "primitive-types",
+ "primitive-types 0.12.2",
  "proptest",
  "rand",
  "rlp",
@@ -2222,6 +2318,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "tracing"
+version = "0.1.40"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3523ab5a71916ccf420eebdf5521fcef02141234bbc0b8a49f2fdc4544364ef"
+dependencies = [
+ "pin-project-lite",
+ "tracing-core",
+]
+
+[[package]]
+name = "tracing-core"
+version = "0.1.32"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c06d3da6113f116aaee68e4d601191614c9053067f9ab7f6edbcb161237daa54"
+
+[[package]]
 name = "typenum"
 version = "1.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2238,6 +2350,18 @@ name = "uint"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "76f64bba2c53b04fcab63c01a7d7427eadc821e3bc48c34dc9ba29c501164b52"
+dependencies = [
+ "byteorder",
+ "crunchy",
+ "hex",
+ "static_assertions",
+]
+
+[[package]]
+name = "uint"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "909988d098b2f738727b161a106cfc7cab00c539c2687a8836f8e565976fb53e"
 dependencies = [
  "byteorder",
  "crunchy",

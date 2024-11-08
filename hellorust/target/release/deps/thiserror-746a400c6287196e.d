@@ -1,0 +1,10 @@
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/release/deps/libthiserror-746a400c6287196e.rmeta: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/aserror.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/display.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/provide.rs
+
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/release/deps/libthiserror-746a400c6287196e.rlib: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/aserror.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/display.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/provide.rs
+
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/release/deps/thiserror-746a400c6287196e.d: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/aserror.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/display.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/provide.rs
+
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/lib.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/aserror.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/display.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/thiserror-1.0.68/src/provide.rs:

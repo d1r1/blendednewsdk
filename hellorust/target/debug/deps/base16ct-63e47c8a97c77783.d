@@ -1,0 +1,10 @@
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/debug/deps/libbase16ct-63e47c8a97c77783.rmeta: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/lower.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/mixed.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/upper.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/display.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/error.rs
+
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/debug/deps/base16ct-63e47c8a97c77783.d: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/lower.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/mixed.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/upper.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/display.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/error.rs
+
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/lib.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/lower.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/mixed.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/upper.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/display.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/base16ct-0.2.0/src/error.rs:
