@@ -1,0 +1,11 @@
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/wasm32-unknown-unknown/release/deps/libwyz-dd53142c2be4c2f8.rmeta: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/bidi.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/comu.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/fmt.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/range.rs
+
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/wasm32-unknown-unknown/release/deps/libwyz-dd53142c2be4c2f8.rlib: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/bidi.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/comu.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/fmt.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/range.rs
+
+/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/wasm32-unknown-unknown/release/deps/wyz-dd53142c2be4c2f8.d: /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/lib.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/bidi.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/comu.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/fmt.rs /Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/range.rs
+
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/lib.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/bidi.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/comu.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/fmt.rs:
+/Users/protocolw/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wyz-0.5.1/src/range.rs:
