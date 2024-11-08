@@ -21,4 +21,4 @@ package-lock.json
 pnpm-lock.yaml
 
 /hello_rust/Cargo.lock
-/hello_rust/target
+/hello_rust/target/
