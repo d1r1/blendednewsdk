@@ -52,6 +52,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const greetingWithWorld = await deploy("GreetingWithWorld", {
     from: deployerAddress,
     args: [fluentGreetingContractAddress],
+    gasLimit: 10_000_000,
     log: true,
   });
 

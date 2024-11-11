@@ -1,12 +1,10 @@
 #![cfg_attr(target_arch = "wasm32", no_std)]
 extern crate alloc;
-extern crate fluentbase_sdk;
 
-use alloc::string::ToString;
-use alloc::string::String;
+use alloc::string::{String, ToString};
 use fluentbase_sdk::{
     basic_entrypoint,
-    derive::{router, function_id, Contract},
+    derive::{function_id, router, Contract},
     SharedAPI,
 };
 
@@ -37,26 +35,33 @@ basic_entrypoint!(ROUTER);
 
 #[cfg(test)]
 mod tests {
+
     use super::*;
-    use fluentbase_sdk::{journal::JournaßlState, runtime::TestingContext};
-    use hex_literal::hex;
+    use fluentbase_sdk::{codec::SolidityABI, journal::JournalState, runtime::TestingContext};
 
     #[test]
     fn test_contract_method_works() {
-        // form test input
-        let input = hex!("f8194e480000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e2248656c6c6f2c20576f726c6422000000000000000000000000000000000000");
-        let _msg = greetingCall::abi_decode(&input, true).unwrap_or_else(|e| {
-            panic!("Failed to decode input {:?} {:?}", "msg", e,);
-        });
-        let sdk = TestingContext::empty().with_input(input);
-        // run router
-        let mut greeting = ROUTER::new(JournalState::empty(sdk.clone()));
-        greeting.deploy();
-        greeting.main();
-        // check result
-        let test_output = sdk.take_output();
-        assert_eq!(test_output,
-                   hex!("0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e2248656c6c6f2c20576f726c6422000000000000000000000000000000000000"
-    ));
+        let input = GreetingCall::new(()).encode();
+        println!("input: {:?}", input);
+
+        let native_sdk = TestingContext::empty().with_input(input);
+        let sdk = JournalState::empty(native_sdk.clone());
+        let mut router = ROUTER::new(sdk);
+
+        router.deploy();
+        router.main();
+
+        let output = native_sdk.take_output();
+
+        println!("output: {:?}", hex::encode(&output));
+
+        // encoded string "Hello,"
+        let expected_output = "0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000648656c6c6f2c0000000000000000000000000000000000000000000000000000";
+
+        assert_eq!(hex::encode(&output), expected_output);
+
+        let msg: String = SolidityABI::decode(&&output[..], 0).unwrap();
+
+        assert_eq!(msg, "Hello,");
     }
 }

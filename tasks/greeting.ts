@@ -1,5 +1,4 @@
 import { task } from "hardhat/config";
-import { BigNumber } from "ethers";
 
 task("get-greeting", "Fetches the greeting from the deployed GreetingWithWorld contract")
   .addParam("contract", "The address of the deployed GreetingWithWorld contract")
