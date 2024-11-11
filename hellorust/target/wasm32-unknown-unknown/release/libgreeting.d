@@ -1,1 +1,0 @@
-/Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/target/wasm32-unknown-unknown/release/libgreeting.a: /Users/protocolw/Documents/fluentwork/gblendtest/newsdknov8/blendedapp/hellorust/lib.rs
