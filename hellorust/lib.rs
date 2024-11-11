@@ -2,6 +2,7 @@
 extern crate alloc;
 extern crate fluentbase_sdk;
 
+use alloc::string::ToString;
 use alloc::string::String;
 use fluentbase_sdk::{
     basic_entrypoint,
@@ -22,7 +23,7 @@ pub trait RouterAPI {
 impl<SDK: SharedAPI> RouterAPI for ROUTER<SDK> {
     #[function_id("greeting()")]
     fn greeting(&self) -> String {
-        String::from("Hello,")
+        "Hello,".to_string()
     }
 }
 
@@ -37,7 +38,7 @@ basic_entrypoint!(ROUTER);
 #[cfg(test)]
 mod tests {
     use super::*;
-    use fluentbase_sdk::{journal::JournalState, runtime::TestingContext};
+    use fluentbase_sdk::{journal::JournaßlState, runtime::TestingContext};
     use hex_literal::hex;
 
     #[test]

@@ -25,9 +25,9 @@ dependencies = [
 
 [[package]]
 name = "allocator-api2"
-version = "0.2.18"
+version = "0.2.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c6cb57a04249c6480766f7f7cef5467412af1490f8d1e243141daddada3264f"
+checksum = "611cc2ae7d2e242c457e4be7f97036b8ad9ca152b499f53faf99b1ed8fc2553f"
 
 [[package]]
 name = "alloy-eip2930"
@@ -745,7 +745,7 @@ dependencies = [
 [[package]]
 name = "derive-core"
 version = "0.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
@@ -987,7 +987,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-codec"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "alloy-primitives 0.8.11",
  "byteorder",
@@ -1002,7 +1002,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-codec-derive"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
@@ -1015,7 +1015,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-genesis"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "alloy-genesis",
  "alloy-primitives 0.8.11",
@@ -1035,7 +1035,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-poseidon"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "bitvec",
  "halo2curves 0.6.1 (git+https://github.com/privacy-scaling-explorations/halo2curves?tag=v0.6.1)",
@@ -1047,7 +1047,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-runtime"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "eth_trie",
  "fluentbase-codec",
@@ -1063,7 +1063,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "fluentbase-codec",
  "fluentbase-genesis",
@@ -1076,7 +1076,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-sdk-derive"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "convert_case 0.6.0",
  "crypto-hashes",
@@ -1096,7 +1096,7 @@ dependencies = [
 [[package]]
 name = "fluentbase-types"
 version = "0.1.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "alloy-primitives 0.8.11",
  "alloy-rlp",
@@ -1858,7 +1858,7 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 [[package]]
 name = "revm-primitives"
 version = "10.0.0"
-source = "git+https://github.com/fluentlabs-xyz/fluentbase#4401aa18c689ee4e1f6c4148e2b36b9384a12592"
+source = "git+https://github.com/fluentlabs-xyz/fluentbase#38942c59ccdc8ea0fb1e4e56e1322b81ec6d7b6e"
 dependencies = [
  "alloy-eip2930",
  "alloy-eip7702",
@@ -1963,9 +1963,9 @@ dependencies = [
 
 [[package]]
 name = "rustix"
-version = "0.38.39"
+version = "0.38.40"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "375116bee2be9ed569afe2154ea6a99dfdffd257f533f187498c2a8f5feaf4ee"
+checksum = "99e4ea3e1cdc4b559b8e5650f9c8e5998e3e5c1343b4eaf034565f32318d63c0"
 dependencies = [
  "bitflags",
  "errno",
@@ -2273,18 +2273,18 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "1.0.68"
+version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "02dd99dc800bbb97186339685293e1cc5d9df1f8fae2d0aecd9ff1c77efea892"
+checksum = "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52"
 dependencies = [
  "thiserror-impl",
 ]
 
 [[package]]
 name = "thiserror-impl"
-version = "1.0.68"
+version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a7c61ec9a6f64d2793d8a45faba21efbe3ced62a886d44c36a009b2b519b4c7e"
+checksum = "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1"
 dependencies = [
  "proc-macro2",
  "quote",

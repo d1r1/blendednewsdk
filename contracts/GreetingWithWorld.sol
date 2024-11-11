@@ -17,4 +17,9 @@ contract GreetingWithWorld {
         // Concatenate the returned greeting with " World"
         return string(abi.encodePacked(greeting, " World"));
     }
+
+    function getrustGreeting() external view returns (string memory){
+        string memory rustgreeting =  fluentGreetingContract.greeting();
+        return rustgreeting;
+    }
 }
